@@ -1,0 +1,304 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    overflow-x: auto;
+  }
+  
+  .header ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+  }
+  
+  .header ul li {
+    padding: 10px;
+    font-size: 1.5rem;
+    color: rgb(30, 21, 157);
+  }
+  
+  .header ul li:hover {
+    cursor: pointer;
+    background-color: rgb(255, 62, 4);
+    color: rgb(245, 245, 245);
+  }
+  
+  .header-image img {
+    width: 100%;
+    height: 150%;
+    position:relative;
+   
+  }
+  
+  .header-image-text {
+    position: absolute;
+    width: 300px;
+    top: 12rem;
+    left: 2rem;
+  }
+  
+  .header-image-text h2 {
+    color: rgb(5, 5, 5);
+  }
+  .header-image-text p {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rempx;
+    padding:10px;
+  }
+  
+  .header-image-text input {
+    font-family: poppins;
+    padding: 10px 15px;
+    font-size: 10px;
+    border: none;
+    color: whitesmoke;
+    border-radius: 10px;
+    background-color: tomato;
+  }
+  
+  .header-image-text input:hover {
+    cursor: pointer;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .activities h2 {
+    text-align: center;
+  }
+  
+  .general {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+  
+  .repeat {
+    box-shadow: 2px 2px 20px 0.1px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    text-align: center;
+    padding: 0px;
+    margin: 20px;
+    width: 250px;
+  }
+  
+  .repeat h2 {
+    font-size: 15px;
+  }
+  
+  .repeat p {
+    font-size: 7px;
+  }
+  
+  .repeat img {
+    text-align: center;
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .repeat input {
+    font-family: poppins;
+    padding: 10px 15px;
+    font-size: 10px;
+    border: none;
+    color: tomato;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid tomato;
+    margin-bottom: 20px;
+  }
+  
+  .repeat input:hover {
+    cursor: pointer;
+    background-color: tomato;
+    color: whitesmoke;
+  }
+  
+  .subscription {
+    background-color: tomato;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+  }
+  
+  .subscription h2 {
+    color: whitesmoke;
+    font-size: 25px;
+    padding-top: 50px;
+    margin: 0px;
+  }
+  
+  .subscription p {
+    color: whitesmoke;
+    font-size: 7px;
+  }
+  
+  .subscription input[type="text"] {
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    width: 200px;
+    display: block;
+  }
+  
+  .subscription input[type="submit"] {
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+  
+  .subscription input[type="submit"]:hover {
+    cursor: pointer;
+  }
+  
+  .subscription input:focus {
+    outline: none;
+  }
+  
+  .subscription form {
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+  
+  @media screen and (min-width: 700px) {
+    .header ul li {
+      display: inline-block;
+    }
+  
+    .header-image img {
+      height: 300px;
+    }
+  
+    .header-image-text {
+      top: 5rem;
+      left: 2rem;
+    }
+  
+    .general {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .repeat {
+      width: 400px;
+    }
+  
+    .repeat h2 {
+      font-size: 20px;
+    }
+  
+    .repeat p {
+      font-size: 10px;
+    }
+  
+    .repeat input {
+      font-size: 15px;
+    }
+  
+    .repeat img {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .subscription h2 {
+      color: whitesmoke;
+      font-size: 40px;
+    }
+  
+    .subscription p {
+      color: whitesmoke;
+      font-size: 15px;
+    }
+  
+    .subscription input[type="text"] {
+      font-size: 20px;
+      width: 300px;
+      display: inline-block;
+    }
+    .subscription input[type="submit"] {
+      display: inline-block;
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .header-image img {
+      height: 500px;
+    }
+  
+    .header-image-text {
+      top: 3rem;
+      left: 5rem;
+      width: 800px;
+    }
+    .header-image-text p {
+      font-size: 20px;
+    }
+  
+    .header-image-text input {
+      padding: 20px 35px;
+      font-size: 20px;
+    }
+  
+    .header-image-text h2 {
+      font-size: 60px;
+    }
+  
+    .general {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .repeat {
+      width: 350px;
+    }
+  
+    .repeat h2 {
+      font-size: 30px;
+    }
+  
+    .repeat p {
+      font-size: 15px;
+    }
+  
+    .repeat input {
+      font-size: 20px;
+    }
+  
+    .repeat img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .subscription h2 {
+      color: whitesmoke;
+      font-size: 50px;
+      padding-top: 50px;
+      margin: 0px;
+    }
+  
+    .subscription p {
+      color: whitesmoke;
+      font-size: 15px;
+    }
+  
+    .subscription input[type="text"] {
+      font-size: 20px;
+      width: 500px;
+      display: inline-block;
+    }
+    .subscription input[type="submit"] {
+      display: inline-block;
+      font-size: 20px;
+    }
+  }
